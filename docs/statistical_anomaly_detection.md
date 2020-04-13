@@ -11,7 +11,7 @@ Wind turbines have always fascinated me with the amount of power they generate. 
 
 Wind speed data (meters per second) is generated from a device called Anemometer. The data is collected at 4 different locations in Tamil Nadu, India. For confidential reasons, I extraceted only a fraction of the original dataset for this analysis. They are all stored as `.csv's` and stored in the `data` folder of this project.
 
-```{r , echo=FALSE}
+```r
 # load the libraries 
 source("scripts/libraries.R")
 source("scripts/functions/functions.R")
