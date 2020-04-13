@@ -14,7 +14,4 @@ source("scripts/libraries.R")
 source("scripts/functions/functions.R")
 ```
 
-<img src="outputs/plots/windspeeds_boxplots.png" title="boxplots of wind speeds" alt="boxplots of windspeeds" width="100%" />
-
-
-![boxplots](outputs/plots/windspeeds_boxplots.png)
+![boxplots](/outputs/plots/windspeeds_boxplots.png)
