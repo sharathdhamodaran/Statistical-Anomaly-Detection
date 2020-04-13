@@ -28,6 +28,9 @@ windspeedData <- files %>%
   # reduce with rbind into one dataframe
   reduce(rbind) 
 
+# peak into the windspeed data
+head(windspeedData)
+
 # Data Manipulation ------------------------------------------------------------
 
 windspeedData <- windspeedData %>%
@@ -35,9 +38,6 @@ windspeedData <- windspeedData %>%
   mutate(AVERAGE = AVERAGE * constantVal, TARGET = TARGET * constantVal) %>% 
   # change the datetime format for analysis
   mutate(DATETIME = as.POSIXct(DATETIME, format = "%m/%d/%Y %H:%M"))
-
-# peak into the windspeed data
-head(windspeedData)
 
 # visualize windspeeds at different locations
 windspeedData %>%
