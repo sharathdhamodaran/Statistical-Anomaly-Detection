@@ -19,6 +19,7 @@ filesLocation <- here("data")
 
 # look for all the .csv files and makes a list of them called "files"
 files <- dir(filesLocation, pattern = "*.csv")
+files
 
 # bind all the .csv's into one dataframe
 windspeedData <- files %>%
