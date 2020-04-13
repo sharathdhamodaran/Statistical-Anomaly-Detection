@@ -11,7 +11,7 @@ Wind turbines have always fascinated me with the amount of power they generate. 
 
 Wind speed data (meters per second) is generated from a device called Anemometer. The data is collected at 4 different locations in Tamil Nadu, India. For confidential reasons, I extraceted only a fraction of the original dataset for this analysis. They are all stored as `.csv's` and stored in the `data` folder of this project.
 
-```r
+```{r , echo=FALSE}
 # load the libraries 
 source("scripts/libraries.R")
 source("scripts/functions/functions.R")
@@ -41,7 +41,7 @@ head(windspeedData)
 # A tibble: 6 x 5
   DATETIME       ID    LOCATION TARGET AVERAGE
   <chr>          <chr> <chr>     <dbl>   <dbl>
-1 7/29/2016 1:59 4E1GS A           0.4   0.553
+1 7/29/2016 1:59 AE1GS A           0.4   0.553
 2 7/29/2016 2:09 K93EY A           0.4   0.464
 3 7/29/2016 2:19 L52UC A           0.4   0.482
 4 7/29/2016 2:29 L52V4 A           0.4   0.451
