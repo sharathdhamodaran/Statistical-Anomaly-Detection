@@ -1,8 +1,3 @@
----
-title: "Statistical Anomaly Detection in wind speed data"
-author: "Sharath Kumar Dhamodaran"
----
-
 # `Statistical Anomaly Detection`
 
 Wind turbines have always fascinated me with the amount of power they generate. Wind turbine maintenance is a tedious task which is also associated with unnecessary downtimes due to manual nature of work. Wind Speed is one of the critical data that wind analysts use for maintenence tasks. I was curious to see if I could design an automated system that could alert operators in real-time with abrupt changes in wind speed. Once developed, the hope is that it will allow better prioritization of maintenance tasks. 
