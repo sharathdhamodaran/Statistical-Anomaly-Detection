@@ -9,12 +9,23 @@ Wind turbines have always fascinated me with the amount of power they generate. 
 
 ## `Data Generation & Extraction`
 
-Wind speed data (meters per second) is generated from a device called Anemometer. The data is collected at 4 different locations in Tamil Nadu, India. For confidential reasons, I extraceted only a fraction of the original dataset for this analysis. They are all stored as `.csv's` and stored in the `data` folder of this project.
+Wind speed data (meters per second) is generated from a device called Anemometer. The data is collected at 4 different locations in Tamil Nadu, India. For confidential reasons, I extraceted only a fraction of the original dataset for this analysis. They are all stored as `.csv's` in the `data` folder of this project.
 
 ```r
 # load the libraries 
-source("scripts/libraries.R")
-source("scripts/functions/functions.R")
+library(tidyverse)  # data manipulation
+library(tidyr)  # data manipulation
+library(gdata)  # Data Manipulation
+library(ggplot2)  # data Visualisation
+library(ggrepel)  # help avoid overlapping text labels
+library(gridExtra) # adds custom table inside ggplot
+library(scales)  # breaks and labels for axes and legends 
+library(ggthemes)  # Adding desired ggplot themes
+library(cpm)  # non-Parametric Multiple Change-Point Analysis 
+library(tseries)  # time series package
+library(tidyquant)  # financial time series
+library(here)  #  tell R where the data is
+library(viridis)  # color palette
 
 #  make a file path by specifying the location
 filesLocation <- here("data")
