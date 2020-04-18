@@ -105,7 +105,7 @@ windspeedData %>%
        x = "",
        y = "Average wind speed (meters/second)") +
   theme_few() +
-  theme(legend.position="none",
+  theme(legend.position = "none",
         axis.text = element_text(size = 10, face = "bold"), 
         axis.title = element_text(size = 10, face = "bold"),
         plot.title = element_text(colour = "blue", hjust = 0.5,
@@ -174,7 +174,7 @@ for (l in 1:(nrow(windspeedLocations))) {
     # filter out any stationary datasets using p-values
     filter(PVALUE > 0.05)
   # exit out of the loop if the below conidition is true
-  if(nrow(windspeeddataSubset) == 0)
+  if (nrow(windspeeddataSubset) == 0)
     next
   # identify the changepoint location indices
   changepointLocations <- changepointDetection(windspeeddataSubset$AVERAGE,
@@ -182,7 +182,7 @@ for (l in 1:(nrow(windspeedLocations))) {
                                                avgrunLength,
                                                startObs)
   # exit out of the loop if no changepoints are found
-  if(!length(changepointLocations))
+  if (!length(changepointLocations))
     next
   # create a table with all the changepoints
   changepointTable <- windspeeddataSubset %>%
@@ -245,4 +245,4 @@ for (l in 1:(nrow(windspeedLocations))) {
 # combine all the changepoint dataframes into a final table
 changepointFinal <- bind_rows(changepointsData)
 # clear all workspace objects and retain only what we want
-rm(list=setdiff(ls(), "changepointFinal"))
+rm(list = setdiff(ls(), "changepointFinal"))
