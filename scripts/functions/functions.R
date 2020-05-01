@@ -1,9 +1,3 @@
-#-------------------------------------------------------------------------------
-# Script Name: Change Point Detection function
-# Author: Sharath Kumar Dhamodaran
-#-------------------------------------------------------------------------------
-
-# Function definition
 changepointDetection <- function(windSeedData,
                                  statTest,
                                  avgrunLength,
